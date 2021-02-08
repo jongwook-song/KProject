@@ -22,7 +22,6 @@ apply plugin: "com.ewerk.gradle.plugins.querydsl"
 
 group 'com.stock.news'
 version '1.0-SNAPSHOT'
-sourceCompatibility = 1.8
 
 repositories {
     mavenCentral()
