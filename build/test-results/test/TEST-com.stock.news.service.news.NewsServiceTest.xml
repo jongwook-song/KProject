@@ -1,0 +1,756 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.stock.news.service.news.NewsServiceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-02-08T14:30:57" hostname="wook-MacBook-Pro.local" time="7.221">
+  <properties/>
+  <testcase name="뉴스_크롤링_테스트" classname="com.stock.news.service.news.NewsServiceTest" time="7.221"/>
+  <system-out><![CDATA[2021-02-08 23:30:57.698  INFO 9100 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.stock.news.service.news.NewsServiceTest], using SpringBootContextLoader
+2021-02-08 23:30:57.699  INFO 9100 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.stock.news.service.news.NewsServiceTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-02-08 23:30:57.699  INFO 9100 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.stock.news.service.news.NewsServiceTest]: NewsServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-02-08 23:30:57.705  INFO 9100 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.stock.news.Application for test class com.stock.news.service.news.NewsServiceTest
+2021-02-08 23:30:57.706  INFO 9100 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2021-02-08 23:30:57.706  INFO 9100 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@2d7f7f02, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1939eb14, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@9cbc140, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@5e13f155, org.springframework.test.context.support.DirtiesContextTestExecutionListener@84212fa, org.springframework.test.context.transaction.TransactionalTestExecutionListener@5e7529ad, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@96332e2, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@483bf3c2, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@5076fdfd, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@27398e1f, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@37dd5c38, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@206f1ce2]
+totalUrl : https://search.naver.com/search.naver?&where=news&query=8일&pd=1&ds=2021.02.01&de=2021.02.08&mynews=0&cluster_rank=1&start=01
+https://www.news1.kr/articles/?4206161
+https://www.donga.com/news/article/all/20210207/105324305/1
+http://yna.kr/AKR20210207054551530?did=1195m
+http://news.tf.co.kr/read/economy/1841967.htm
+http://realty.chosun.com/site/data/html_dir/2021/02/08/2021020801212.html
+http://www.etnews.com/20210208000087
+https://news.imaeil.com/Society/2021020807182874157
+https://www.donga.com/news/article/all/20210208/105326311/2
+https://www.news1.kr/articles/?4206903
+https://www.pressian.com/pages/articles/2021020809465052745?utm_source=naver&utm_medium=search
+totalUrl : https://search.naver.com/search.naver?&where=news&query=8일&pd=1&ds=2021.02.01&de=2021.02.08&mynews=0&cluster_rank=1&start=11
+http://yna.kr/AKR20210207054551530?did=1195m
+http://realty.chosun.com/site/data/html_dir/2021/02/08/2021020801212.html
+http://news.tf.co.kr/read/life/1841965.htm
+https://star.ytn.co.kr/_sn/0117_202102081445216488
+http://www.etnews.com/20210208000087
+https://www.seoul.co.kr/news/newsView.php?id=20210208019007&wlog_tag3=naver
+https://news.imaeil.com/Society/2021020817141159765
+http://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0002717936&CMPT_CD=P0010&utm_source=naver&utm_medium=newsearch&utm_campaign=naver_news
+http://www.munhwa.com/news/view.html?no=20210208MW074342266887
+http://www.etnews.com/20210208000208
+totalUrl : https://search.naver.com/search.naver?&where=news&query=8일&pd=1&ds=2021.02.01&de=2021.02.08&mynews=0&cluster_rank=1&start=21
+https://view.asiae.co.kr/article/2021020808141135447
+https://view.asiae.co.kr/article/2021020721570496436
+http://www.munhwa.com/news/view.html?no=20210208MW074144523680
+https://www.dnews.co.kr/uhtml/view.jsp?idxno=202102081257021700848
+https://www.sedaily.com/NewsView/22IFU34AIE
+http://www.fnnews.com/news/202102071010215362
+https://www.news1.kr/photos/view/?4611778
+http://www.ilovepc.co.kr/news/articleView.html?idxno=37960
+http://cc.newdaily.co.kr/site/data/html/2021/02/08/2021020800158.html
+http://news.kbs.co.kr/news/view.do?ncd=5113589&ref=A
+totalUrl : https://search.naver.com/search.naver?&where=news&query=8일&pd=1&ds=2021.02.01&de=2021.02.08&mynews=0&cluster_rank=1&start=31
+http://www.busan.com/view/busan/view.php?code=2021020814532903119
+http://yna.kr/AKR20210208045900007?did=1195m
+https://news.imaeil.com/Society/2021020708351241387
+https://www.sedaily.com/NewsView/22IGBWH4JB
+http://www.m-i.kr/news/articleView.html?idxno=794935
+http://news.tf.co.kr/read/national/1841906.htm
+http://isplus.live.joins.com/news/article/article.asp?total_id=23988054
+http://www.fnnews.com/news/202102080943220072
+http://www.mydaily.co.kr/new_yk/html/read.php?newsid=202102081723305136&ext=na
+http://biz.heraldcorp.com/view.php?ud=202102081000510365540_1
+totalUrl : https://search.naver.com/search.naver?&where=news&query=8일&pd=1&ds=2021.02.01&de=2021.02.08&mynews=0&cluster_rank=1&start=41
+http://sports.khan.co.kr/news/sk_index.html?art_id=202102081007003&sec_id=540301&pt=nv
+http://www.ccdailynews.com/news/articleView.html?idxno=2034951
+http://news.heraldcorp.com/view.php?ud=20210208000135
+http://www.leaders.kr/news/articleView.html?idxno=230811
+http://www.newsway.co.kr/news/view?tp=1&ud=2021020818343739621
+https://sports.donga.com/article/all/20210208/105337441/1
+https://daily.hankooki.com/lpage/economy/202102/dh20210208090254138060.htm?s_ref=nv
+http://www.sportsseoul.com/news/read/1010976?ref=naver
+https://www.sedaily.com/NewsView/22IGBIJNFV
+http://www.segye.com/content/html/2021/02/07/20210207510670.html?OutUrl=naver
+totalUrl : https://search.naver.com/search.naver?&where=news&query=8일&pd=1&ds=2021.02.01&de=2021.02.08&mynews=0&cluster_rank=1&start=51
+http://www.edaily.co.kr/news/newspath.asp?newsid=01289046628948552&snapkey=55593,별자리,물병자리,물고기자리,양자리,황소자리,쌍둥이자리,게자리,사자자리,처녀자리,천칭자리,전갈자리,사수자리
+http://www.lawissue.co.kr/view.php?ud=2021020812164038189a8c8bf58f_12
+http://news.khan.co.kr/kh_today/today_photo.html?artid=202102081754001&code=940100
+https://biz.chosun.com/site/data/html_dir/2021/02/07/2021020700252.html?utm_source=naver&utm_medium=original&utm_campaign=biz
+http://news.tf.co.kr/read/national/1841877.htm
+http://www.busan.com/view/busan/view.php?code=2021020810244338181
+http://yna.kr/AKR20210206014551007?did=1195m
+http://www.xportsnews.com/?ac=article_view&entry_id=1387190
+http://www.xportsnews.com/?ac=article_view&entry_id=1387237
+http://news.tf.co.kr/read/entertain/1842031.htm
+totalUrl : https://search.naver.com/search.naver?&where=news&query=8일&pd=1&ds=2021.02.01&de=2021.02.08&mynews=0&cluster_rank=1&start=61
+http://www.ksilbo.co.kr/news/articleView.html?idxno=787913
+http://www.cnbnews.com/news/article.html?no=479100
+http://mksports.co.kr/view/2021/129689/
+http://www.cnbnews.com/news/article.html?no=479180
+http://news.lghellovision.net/news/newsView.do?soCode=SC20000000&idx=301842
+http://www.kukinews.com/newsView/kuk202102080055
+http://sports.khan.co.kr/news/sk_index.html?art_id=202102082223013&sec_id=560101&pt=nv
+http://www.kyeonggi.com/news/articleView.html?idxno=2345821
+http://www.segyebiz.com/newsView/20210208503436?OutUrl=naver
+http://www.betanews.net:8080/article/1253574.html
+totalUrl : https://search.naver.com/search.naver?&where=news&query=8일&pd=1&ds=2021.02.01&de=2021.02.08&mynews=0&cluster_rank=1&start=71
+https://www.news1.kr/articles/?4204900
+https://www.asiatime.co.kr/article/20210208500308
+http://www.enewstoday.co.kr/news/articleView.html?idxno=1450872
+https://www.ytn.co.kr/_ln/0103_202102080647162821
+http://www.m-i.kr/news/articleView.html?idxno=795320
+http://www.kjdaily.com/read.php3?aid=1612710000537684208
+http://www.yonhapnewstv.co.kr/MYH20210208017900038/?did=1825m
+http://www.gokorea.kr/698789
+http://www.kukinews.com/newsView/kuk202102080223
+http://www.kjdaily.com/read.php3?aid=1612710000537685208
+totalUrl : https://search.naver.com/search.naver?&where=news&query=8일&pd=1&ds=2021.02.01&de=2021.02.08&mynews=0&cluster_rank=1&start=81
+http://www.newsis.com/view/?id=NISX20210208_0001333984&cID=10201&pID=10200
+http://news.knn.co.kr/news/todaynews_read.asp?etime=2021020800062&userid=choregina&newsgubun=lifestory
+http://www.sisamagazine.co.kr/news/articleView.html?idxno=345078
+https://www.wikitree.co.kr/articles/617882
+http://yna.kr/AKR20210207032500056?did=1195m
+https://www.news1.kr/articles/?4206801
+http://www.joongdo.co.kr/web/view.php?key=20210208010003535
+https://www.asiatime.co.kr/article/20210208500099
+https://view.asiae.co.kr/article/2021020814395849133
+http://www.xportsnews.com/?ac=article_view&entry_id=1387197
+totalUrl : https://search.naver.com/search.naver?&where=news&query=8일&pd=1&ds=2021.02.01&de=2021.02.08&mynews=0&cluster_rank=1&start=91
+http://news.tvchosun.com/site/data/html_dir/2021/02/08/2021020890151.html
+https://view.asiae.co.kr/article/2021020716015997155
+https://www.asiatime.co.kr/article/20210208500204
+http://www.edaily.co.kr/news/newspath.asp?newsid=01334966628948224
+http://isplus.live.joins.com/news/article/article.asp?total_id=23987548
+http://news.tvchosun.com/site/data/html_dir/2021/02/08/2021020890090.html
+https://www.asiatime.co.kr/article/20210208500246
+http://news.kbs.co.kr/news/view.do?ncd=5112747&ref=A
+http://www.cnbnews.com/news/article.html?no=479215
+http://www.enewstoday.co.kr/news/articleView.html?idxno=1450866
+totalUrl : https://search.naver.com/search.naver?&where=news&query=9일&pd=1&ds=2021.02.02&de=2021.02.09&mynews=0&cluster_rank=1&start=01
+https://biz.chosun.com/site/data/html_dir/2021/02/08/2021020802191.html?utm_source=naver&utm_medium=original&utm_campaign=biz
+https://www.donga.com/news/article/all/20210208/105339810/1
+http://www.edaily.co.kr/news/newspath.asp?newsid=04060646628948552
+http://news.khan.co.kr/kh_news/khan_art_view.html?artid=202102082122001&code=940100
+http://www.fnnews.com/news/202102081506256165
+http://yna.kr/AKR20210208158051530?did=1195m
+https://www.seoul.co.kr/news/newsView.php?id=20210208500196&wlog_tag3=naver
+http://edu.donga.com/?p=article&ps=view&at_no=20210208094923737265
+https://www.news1.kr/articles/?4206553
+http://news.heraldcorp.com/view.php?ud=20210208000353
+totalUrl : https://search.naver.com/search.naver?&where=news&query=9일&pd=1&ds=2021.02.02&de=2021.02.09&mynews=0&cluster_rank=1&start=11
+https://www.news1.kr/articles/?4206176
+http://yna.kr/AKR20210208055100003?did=1195m
+https://biz.chosun.com/site/data/html_dir/2021/02/07/2021020700216.html?utm_source=naver&utm_medium=original&utm_campaign=biz
+https://www.news1.kr/articles/?4206214
+http://www.edaily.co.kr/news/newspath.asp?newsid=04060646628948552
+https://sports.donga.com/article/all/20210208/105327507/1
+http://news.tf.co.kr/read/economy/1841938.htm
+http://yna.kr/AKR20210207063000080?did=1195m
+http://mksports.co.kr/view/2021/128967/
+https://www.sedaily.com/NewsView/22IGB8XZM9
+totalUrl : https://search.naver.com/search.naver?&where=news&query=9일&pd=1&ds=2021.02.02&de=2021.02.09&mynews=0&cluster_rank=1&start=21
+https://news.joins.com/article/olink/23583168
+http://www.fnnews.com/news/202102081226045036
+https://view.asiae.co.kr/article/2021020811171498228
+http://news.khan.co.kr/kh_news/khan_art_view.html?artid=202102070831001&code=610102
+http://sports.khan.co.kr/news/sk_index.html?art_id=202102081053003&sec_id=540301&pt=nv
+https://www.news1.kr/articles/?4206204
+http://www.cctoday.co.kr/news/articleView.html?idxno=2123833
+http://yna.kr/AKR20210208017000057?did=1195m
+http://www.kyeonggi.com/news/articleView.html?idxno=2345923
+http://www.hani.co.kr/arti/cartoon/hanicartoon/982376.html
+totalUrl : https://search.naver.com/search.naver?&where=news&query=9일&pd=1&ds=2021.02.02&de=2021.02.09&mynews=0&cluster_rank=1&start=31
+http://www.dailytw.kr/news/articleView.html?idxno=21671
+http://www.hani.co.kr/arti/society/obituary/982383.html
+http://yna.kr/AKR20210208140300002?did=1195m
+http://www.sportsseoul.com/news/read/1011003?ref=naver
+https://daily.hankooki.com/lpage/finance/202102/dh20210208140823148320.htm?s_ref=nv
+https://news.joins.com/article/olink/23583095
+https://news.imaeil.com/Politics/2021020817345405703
+http://www.dhnews.co.kr/news/articleView.html?idxno=136456
+http://www.yonhapnewstv.co.kr/MYH20210208017500038/?did=1825m
+http://www.kookje.co.kr/news2011/asp/newsbody.asp?code=0300&key=20210208.99099002969
+totalUrl : https://search.naver.com/search.naver?&where=news&query=9일&pd=1&ds=2021.02.02&de=2021.02.09&mynews=0&cluster_rank=1&start=41
+http://www.newspim.com/news/view/20210208000960
+http://www.hani.co.kr/arti/society/internalmove/982384.html
+http://www.newspim.com/news/view/20210208000118
+http://news.khan.co.kr/kh_news/khan_art_view.html?artid=202102082147015&code=100402
+http://www.inven.co.kr/webzine/news/?news=251353
+http://www.nspna.com/news/?mode=view&newsid=482687
+http://yna.kr/AKR20210206014552007?did=1195m
+http://www.queen.co.kr/news/articleView.html?idxno=352389
+http://news.khan.co.kr/kh_news/khan_art_view.html?artid=202102082049005&code=990101
+http://cc.newdaily.co.kr/site/data/html/2021/02/08/2021020800265.html
+totalUrl : https://search.naver.com/search.naver?&where=news&query=9일&pd=1&ds=2021.02.02&de=2021.02.09&mynews=0&cluster_rank=1&start=51
+http://www.businesspost.co.kr/BP?command=article_view&num=216690
+http://www.kyeongin.com/main/view.php?key=20210209010001673
+https://biz.chosun.com/site/data/html_dir/2021/02/05/2021020500610.html?utm_source=naver&utm_medium=original&utm_campaign=biz
+http://www.taxtimes.co.kr/news/article.html?no=248455
+https://www.news1.kr/articles/?4205603
+http://www.newsis.com/view/?id=NISX20210208_0001333716&cID=10817&pID=14000
+http://edu.donga.com/?p=article&ps=view&at_no=20210208144024879674
+http://www.fntimes.com/html/view.php?ud=20210208184354698299ebb03838_18
+http://www.cmbkj.co.kr/ab-991-19471
+http://www.newsfreezone.co.kr/news/articleView.html?idxno=296935
+totalUrl : https://search.naver.com/search.naver?&where=news&query=9일&pd=1&ds=2021.02.02&de=2021.02.09&mynews=0&cluster_rank=1&start=61
+http://news.khan.co.kr/kh_news/khan_art_view.html?artid=202102082149005&code=361102
+http://news.heraldcorp.com/view.php?ud=20210208001167
+http://www.hani.co.kr/arti/society/schooling/982341.html
+http://www.joongboo.com/news/articleView.html?idxno=363472214
+http://www.ccdailynews.com/news/articleView.html?idxno=2034423
+http://www.mhns.co.kr/news/articleView.html?idxno=427386
+http://news.heraldcorp.com/view.php?ud=20210208001016
+https://www.chosun.com/economy/science/2021/02/07/EJECRMR3UFH5VKFBOBLHUZNPH4/?utm_source=naver&utm_medium=referral&utm_campaign=naver-news
+http://www.businesspost.co.kr/BP?command=article_view&num=216755
+http://www.veritas-a.com/news/articleView.html?idxno=356226
+totalUrl : https://search.naver.com/search.naver?&where=news&query=9일&pd=1&ds=2021.02.02&de=2021.02.09&mynews=0&cluster_rank=1&start=71
+http://www.tbs.seoul.kr/news/bunya.do?method=daum_html2&typ_800=6&idx_800=3422381&seq_800=20414958
+http://news.khan.co.kr/kh_news/khan_art_view.html?artid=202102082147105&code=361101
+http://www.pennmike.com/news/articleView.html?idxno=40806
+http://www.newsis.com/view/?id=NISX20210208_0001333693&cID=10805&pID=10800
+https://www.sedaily.com/NewsView/22IGBA5JOF
+http://www.veritas-a.com/news/articleView.html?idxno=356281
+https://daily.hankooki.com/lpage/society/202102/dh20210208230555137780.htm?s_ref=nv
+http://www.veritas-a.com/news/articleView.html?idxno=356268
+http://www.sportsseoul.com/news/read/1011032?ref=naver
+http://www.topdaily.kr/news/articleView.html?idxno=92270
+totalUrl : https://search.naver.com/search.naver?&where=news&query=9일&pd=1&ds=2021.02.02&de=2021.02.09&mynews=0&cluster_rank=1&start=81
+http://www.kyeongin.com/main/view.php?key=20210209010001681
+https://hankookilbo.com/News/Read/A2021020815370005191?did=NA
+https://www.news1.kr/articles/?4204977
+http://www.kukinews.com/newsView/kuk202102080343
+http://www.veritas-a.com/news/articleView.html?idxno=356282
+http://www.veritas-a.com/news/articleView.html?idxno=356274
+http://www.businesspost.co.kr/BP?command=article_view&num=216503
+http://www.idaegu.com/newsView/idg202102080035
+https://daily.hankooki.com/lpage/economy/202102/dh20210208171306138060.htm?s_ref=nv
+http://www.newsway.co.kr/news/view?tp=1&ud=2021020818364785733
+totalUrl : https://search.naver.com/search.naver?&where=news&query=9일&pd=1&ds=2021.02.02&de=2021.02.09&mynews=0&cluster_rank=1&start=91
+http://www.kyeongin.com/main/view.php?key=20210209010001652
+http://www.fnnews.com/news/202102070449018521
+http://www.ikld.kr/news/articleView.html?idxno=230437
+http://www.safetimes.co.kr/news/articleView.html?idxno=91808
+http://www.kwnews.co.kr/nview.asp?aid=221020700161
+http://www.veritas-a.com/news/articleView.html?idxno=356271
+http://www.veritas-a.com/news/articleView.html?idxno=356270
+http://www.jbnews.com/news/articleView.html?idxno=1325968
+http://www.dynews.co.kr/news/articleView.html?idxno=617648
+http://www.dynews.co.kr/news/articleView.html?idxno=617642
+totalUrl : https://search.naver.com/search.naver?&where=news&query=10일&pd=1&ds=2021.02.03&de=2021.02.10&mynews=0&cluster_rank=1&start=01
+http://yna.kr/AKR20210208132600017?did=1195m
+https://www.donga.com/news/article/all/20210208/105342146/2
+http://www.busan.com/view/busan/view.php?code=2021020810160957611
+https://biz.chosun.com/site/data/html_dir/2021/02/08/2021020800488.html?utm_source=naver&utm_medium=original&utm_campaign=biz
+http://www.etnews.com/20210208000075
+http://biz.heraldcorp.com/view.php?ud=202102081021270450636_1
+https://www.sedaily.com/NewsView/22IGB0VF4Z
+http://www.edaily.co.kr/news/newspath.asp?newsid=01666246628948552
+http://www.fnnews.com/news/202102080949321414
+https://news.sbs.co.kr/news/endPage.do?news_id=N1006201908&plink=ORI&cooper=NAVER
+totalUrl : https://search.naver.com/search.naver?&where=news&query=10일&pd=1&ds=2021.02.03&de=2021.02.10&mynews=0&cluster_rank=1&start=11
+http://www.newsis.com/view/?id=NISX20210208_0001333277&cID=10601&pID=10600
+http://www.dt.co.kr/contents.html?article_no=2021020702109919607029&ref=naver
+http://www.fnnews.com/news/202102080949321414
+https://news.sbs.co.kr/news/endPage.do?news_id=N1006201908&plink=ORI&cooper=NAVER
+https://www.donga.com/news/article/all/20210207/105323496/1
+http://yna.kr/AKR20210205140200064?did=1195m
+https://www.donga.com/news/article/all/20210207/105324387/1
+http://biz.heraldcorp.com/view.php?ud=202102081021270450636_1
+http://www.newspim.com/news/view/20210208000217
+http://yna.kr/AKR20210207011000053?did=1195m
+totalUrl : https://search.naver.com/search.naver?&where=news&query=10일&pd=1&ds=2021.02.03&de=2021.02.10&mynews=0&cluster_rank=1&start=21
+http://www.idaegu.com/newsView/idg202102080068
+https://view.asiae.co.kr/article/2021020814555361402
+https://www.news1.kr/articles/?4206341
+http://www.newsis.com/view/?id=NISX20210208_0001333993&cID=10501&pID=10500
+http://www.businesspost.co.kr/BP?command=article_view&num=216622
+http://cc.newdaily.co.kr/site/data/html/2021/02/08/2021020800088.html
+http://www.cnbnews.com/news/article.html?no=479115
+http://www.newspim.com/news/view/20210208001187
+https://www.news1.kr/articles/?4205733
+https://biz.chosun.com/site/data/html_dir/2021/02/05/2021020500650.html?utm_source=naver&utm_medium=original&utm_campaign=biz
+totalUrl : https://search.naver.com/search.naver?&where=news&query=10일&pd=1&ds=2021.02.03&de=2021.02.10&mynews=0&cluster_rank=1&start=31
+http://www.newspim.com/news/view/20210208000227
+https://sports.donga.com/article/all/20210208/105339314/1
+https://sports.donga.com/article/all/20210207/105323747/1
+http://news.mk.co.kr/newsRead.php?no=130770&year=2021
+https://sports.donga.com/article/all/20210207/105321553/1
+http://www.straightnews.co.kr/news/articleView.html?idxno=96205
+http://news.heraldcorp.com/view.php?ud=20210208000075
+http://www.ccdailynews.com/news/articleView.html?idxno=2034666
+http://ch1.skbroadband.com/content/view?parent_no=24&content_no=64&p_no=116711
+http://www.newscape.co.kr/news/view.php?idx=59535
+totalUrl : https://search.naver.com/search.naver?&where=news&query=10일&pd=1&ds=2021.02.03&de=2021.02.10&mynews=0&cluster_rank=1&start=41
+https://www.news1.kr/articles/?4206167
+http://www.hidomin.com/news/articleView.html?idxno=444625
+https://www.kgnews.co.kr/news/article.html?no=627899
+http://www.dynews.co.kr/news/articleView.html?idxno=617713
+http://star.mt.co.kr/stview.php?no=2021020816314987681
+http://www.jjan.kr/news/articleView.html?idxno=2101913
+http://news.heraldcorp.com/view.php?ud=20210208000188
+http://www.kihoilbo.co.kr/news/articleView.html?idxno=910475
+http://news.heraldcorp.com/view.php?ud=20210208000296
+http://www.datasom.co.kr/news/articleView.html?idxno=111944
+totalUrl : https://search.naver.com/search.naver?&where=news&query=10일&pd=1&ds=2021.02.03&de=2021.02.10&mynews=0&cluster_rank=1&start=51
+https://www.sedaily.com/NewsView/22IEYMNP0P
+https://www.econovill.com/news/articleView.html?idxno=518615
+http://www.sisamagazine.co.kr/news/articleView.html?idxno=345108
+http://www.ccnnews.co.kr/news/articleView.html?idxno=208408
+http://www.cstimes.com/news/articleView.html?idxno=450096
+http://www.idomin.com/news/articleView.html?idxno=752629
+http://yna.kr/AKR20210205061900060?did=1195m
+http://www.hidomin.com/news/articleView.html?idxno=444560
+http://www.joongdo.co.kr/web/view.php?key=20210208010003452
+http://www.kyongbuk.co.kr/news/articleView.html?idxno=2067700
+totalUrl : https://search.naver.com/search.naver?&where=news&query=10일&pd=1&ds=2021.02.03&de=2021.02.10&mynews=0&cluster_rank=1&start=61
+http://www.m-i.kr/news/articleView.html?idxno=794614
+https://www.hankyung.com/entertainment/article/202102064930I
+http://www.kihoilbo.co.kr/news/articleView.html?idxno=910294
+http://www.jbnews.com/news/articleView.html?idxno=1326038
+http://star.mk.co.kr/new/view.php?mc=ST&year=2021&no=131552
+http://www.newsmaker.or.kr/news/articleView.html?idxno=111140
+http://www.incheonilbo.com/news/articleView.html?idxno=1078729
+http://www.newsis.com/view/?id=NISX20210203_0001328330&cID=10201&pID=10200
+http://www.metroseoul.co.kr/article/20210208500309
+http://yna.kr/AKR20210205072400064?did=1195m
+totalUrl : https://search.naver.com/search.naver?&where=news&query=10일&pd=1&ds=2021.02.03&de=2021.02.10&mynews=0&cluster_rank=1&start=71
+http://www.hidomin.com/news/articleView.html?idxno=444535
+https://usmbc.co.kr/article/gj6NKwnnt0ZBhMO
+2021-02-08 23:31:00.469  WARN 9100 --- [    Test worker] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 22001, SQLState: 22001
+2021-02-08 23:31:00.469 ERROR 9100 --- [    Test worker] o.h.engine.jdbc.spi.SqlExceptionHelper   : Value too long for column """PICTUREURL"" VARCHAR(255)": "'https://search.pstatic.net/common/?src=https%3A%2F%2Fys.cdn.a04f922e9e85c8d25ebfeae3dfd22a67.com%2F2019%2F01%2F35f118d7afd21f3a... (278)"; SQL statement:
+insert into news (id, createddate, company, content, date, pictureurl, title, url, view) values (null, ?, ?, ?, ?, ?, ?, ?, ?) [22001-199]
+totalUrl : https://search.naver.com/search.naver?&where=news&query=11일&pd=1&ds=2021.02.04&de=2021.02.11&mynews=0&cluster_rank=1&start=01
+http://yna.kr/AKR20210208148900005?did=1195m
+https://news.sbs.co.kr/news/endPage.do?news_id=N1006201401&plink=ORI&cooper=NAVER
+https://www.news1.kr/articles/?4206002
+http://yna.kr/AKR20210208064500061?did=1195m
+http://sports.chosun.com/news/ntype.htm?id=202102090100066830004281&servicedate=20210208
+http://edu.donga.com/?p=article&ps=view&at_no=20210208105006809035
+http://news.kmib.co.kr/article/view.asp?arcid=0015515896&code=61181111&cp=nv
+http://www.newsis.com/view/?id=NISX20210208_0001333072&cID=10701&pID=10700
+http://www.newsfreezone.co.kr/news/articleView.html?idxno=296795
+http://www.kyeonggi.com/news/articleView.html?idxno=2345863
+totalUrl : https://search.naver.com/search.naver?&where=news&query=11일&pd=1&ds=2021.02.04&de=2021.02.11&mynews=0&cluster_rank=1&start=11
+http://www.newsis.com/view/?id=NISX20210208_0001333072&cID=10701&pID=10700
+http://www.newsfreezone.co.kr/news/articleView.html?idxno=296795
+http://www.kyeonggi.com/news/articleView.html?idxno=2345863
+https://www.news1.kr/articles/?4206687
+https://www.asiatime.co.kr/article/20210208500132
+https://news.joins.com/article/olink/23579599
+http://news.wowtv.co.kr/NewsCenter/News/Read?articleId=A202102080265&t=NNv
+http://ch1.skbroadband.com/content/view?parent_no=24&content_no=64&p_no=116710
+http://www.onews.tv/news/articleView.html?idxno=47580
+http://www.getnews.co.kr/news/articleView.html?idxno=514128
+totalUrl : https://search.naver.com/search.naver?&where=news&query=11일&pd=1&ds=2021.02.04&de=2021.02.11&mynews=0&cluster_rank=1&start=21
+http://yna.kr/AKR20210204030200007?did=1195m
+https://www.itbiznews.com/news/articleView.html?idxno=29462
+https://sports.donga.com/article/all/20210204/105284890/1
+http://www.newscape.co.kr/news/view.php?idx=59537
+http://www.kjdaily.com/read.php3?aid=1612348922537552005
+http://www.newsis.com/view/?id=NISX20210203_0001327930&cID=10401&pID=10400
+http://www.cctvnews.co.kr/news/articleView.html?idxno=220205
+http://www.edaily.co.kr/news/newspath.asp?newsid=01489126628947896
+https://news.sbs.co.kr/news/endPage.do?news_id=N1006197061&plink=ORI&cooper=NAVER
+http://www.newsis.com/view/?id=NISX20210204_0001329547&cID=13001&pID=13000
+totalUrl : https://search.naver.com/search.naver?&where=news&query=11일&pd=1&ds=2021.02.04&de=2021.02.11&mynews=0&cluster_rank=1&start=31
+https://sports.donga.com/article/all/20210203/105265275/1
+http://star.mbn.co.kr/view.php?year=2021&no=122077&refer=portal
+http://www.koreadaily.com/news/read.asp?art_id=9072610
+https://www.etoday.co.kr/news/view/1993033
+http://yna.kr/AKR20210202072600052?did=1195m
+http://yna.kr/AKR20210201069200054?did=1195m
+http://www.ajunews.com/view/20210207090235740
+https://www.radiokorea.com/news/article.php?uid=359969
+http://www.skyedaily.com/news/news_view.html?ID=122818
+http://www.finomy.com/news/articleView.html?idxno=88752
+totalUrl : https://search.naver.com/search.naver?&where=news&query=11일&pd=1&ds=2021.02.04&de=2021.02.11&mynews=0&cluster_rank=1&start=41
+http://www.newsis.com/view/?id=NISX20210203_0001328127&cID=10805&pID=10800
+https://www.news1.kr/articles/?4204375
+https://www.sedaily.com/NewsView/22IDL8J2P9
+http://www.100ssd.co.kr/news/articleView.html?idxno=74579
+http://www.newspim.com/news/view/20210203000026
+http://news.kbs.co.kr/news/view.do?ncd=5109998&ref=A
+https://www.pressian.com/pages/articles/2021020405453825385?utm_source=naver&utm_medium=search
+http://www.cctoday.co.kr/news/articleView.html?idxno=2122928
+https://www.news1.kr/articles/?4199033
+http://www.kyeonggi.com/news/articleView.html?idxno=2345225
+totalUrl : https://search.naver.com/search.naver?&where=news&query=11일&pd=1&ds=2021.02.04&de=2021.02.11&mynews=0&cluster_rank=1&start=51
+http://www.dt.co.kr/contents.html?article_no=2021020402101758063001&ref=naver
+http://www.m-i.kr/news/articleView.html?idxno=793771
+http://www.newsfreezone.co.kr/news/articleView.html?idxno=295093
+http://www.aflnews.co.kr/news/articleView.html?idxno=206985
+https://sports.hankooki.com/lpage/economy/202102/sp20210204175722136980.htm?s_ref=nv
+http://www.honam.co.kr/detail/c3QycN/640130
+https://www.news1.kr/articles/?4203946
+https://www.sedaily.com/NewsView/22IE19860I
+http://www.cmbkj.co.kr/ab-991-19405
+http://www.kado.net/news/articleView.html?idxno=1058942
+totalUrl : https://search.naver.com/search.naver?&where=news&query=11일&pd=1&ds=2021.02.04&de=2021.02.11&mynews=0&cluster_rank=1&start=61
+http://www.koreadaily.com/news/read.asp?art_id=9069454
+http://www.slist.kr/news/articleView.html?idxno=225035
+https://news.bbsi.co.kr/news/articleView.html?idxno=3020847
+http://www.cnbnews.com/news/article.html?no=478613
+https://www.pointn.net/news/articleView.html?idxno=27780
+http://goodnews1.com/news/news_view.asp?seq=108169
+http://www.kjdaily.com/read.php3?aid=1612344290537474006
+http://www.ifm.kr/news/300476
+http://www.newstomato.com/ReadNews.aspx?no=1023162
+http://www.ecomedia.co.kr/news/newsview.php?ncode=1065577811879269
+totalUrl : https://search.naver.com/search.naver?&where=news&query=11일&pd=1&ds=2021.02.04&de=2021.02.11&mynews=0&cluster_rank=1&start=71
+http://www.kihoilbo.co.kr/news/articleView.html?idxno=909141
+http://www.kwnews.co.kr/nview.asp?aid=221013100155
+http://www.gamechosun.co.kr/webzine/article/view.php?no=172189
+http://www.econonews.co.kr/news/articleView.html?idxno=157448
+http://www.kdfnews.com/news/articleView.html?idxno=67915
+https://www.dailysecu.com/news/articleView.html?idxno=120424
+https://www.dailysecu.com/news/articleView.html?idxno=120387
+http://www.idaegu.co.kr/news/articleView.html?idxno=336395
+http://mbnmoney.mbn.co.kr/news/view?news_no=MM1004254966
+https://chmbc.co.kr/article/7uNnXOa70ommzcv
+totalUrl : https://search.naver.com/search.naver?&where=news&query=11일&pd=1&ds=2021.02.04&de=2021.02.11&mynews=0&cluster_rank=1&start=81
+http://www.newscj.com/news/articleView.html?idxno=825276
+http://www.hg-times.com/news/articleView.html?idxno=225278
+http://www.idsn.co.kr/news/articleView.html?idxno=40529
+http://kpenews.com/View.aspx?No=1434897
+http://www.slist.kr/news/articleView.html?idxno=223669
+http://www.gukjenews.com/news/articleView.html?idxno=2158222
+http://www.newsis.com/view/?id=NISX20210208_0001332839&cID=10201&pID=10200
+http://www.hani.co.kr/arti/area/yeongnam/982281.html
+https://biz.chosun.com/site/data/html_dir/2021/02/08/2021020801326.html?utm_source=naver&utm_medium=original&utm_campaign=biz
+http://yna.kr/AKR20210207010900002?did=1195m
+totalUrl : https://search.naver.com/search.naver?&where=news&query=11일&pd=1&ds=2021.02.04&de=2021.02.11&mynews=0&cluster_rank=1&start=91
+https://www.hankyung.com/economy/article/2021020812901
+https://www.news1.kr/articles/?4205861
+http://news.kbs.co.kr/news/view.do?ncd=5113703&ref=A
+https://news.jtbc.joins.com/article/article.aspx?news_id=NB11991560
+http://yna.kr/AKR20210208135700063?did=1195m
+http://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0002718025&CMPT_CD=P0010&utm_source=naver&utm_medium=newsearch&utm_campaign=naver_news
+http://yna.kr/AKR20210208071300053?did=1195m
+http://www.dt.co.kr/contents.html?article_no=2021020802109932060001&ref=naver
+http://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0002718023&CMPT_CD=P0010&utm_source=naver&utm_medium=newsearch&utm_campaign=naver_news
+http://www.sisajournal.com/news/articleView.html?idxno=211743
+totalUrl : https://search.naver.com/search.naver?&where=news&query=12일&pd=1&ds=2021.02.05&de=2021.02.12&mynews=0&cluster_rank=1&start=01
+https://www.dnews.co.kr/uhtml/view.jsp?idxno=202102080913362960668
+https://www.nocutnews.co.kr/news/5496977
+http://www.kukinews.com/newsView/kuk202102080271
+https://www.hankyung.com/life/article/2021020818547
+https://www.news1.kr/articles/?4206143
+http://star.mt.co.kr/stview.php?no=2021020810122809617
+http://www.shinailbo.co.kr/news/articleView.html?idxno=1375649
+https://view.asiae.co.kr/article/2021020519374914931
+http://www.jbnews.com/news/articleView.html?idxno=1325976
+http://www.etnews.com/20210205000169
+totalUrl : https://search.naver.com/search.naver?&where=news&query=12일&pd=1&ds=2021.02.05&de=2021.02.12&mynews=0&cluster_rank=1&start=11
+http://www.fnnews.com/news/202102061705189426
+http://www.jbnews.com/news/articleView.html?idxno=1325976
+http://www.gnmaeil.com/news/articleView.html?idxno=466034
+https://health.chosun.com/site/data/html_dir/2021/02/02/2021020201806.html
+http://www.newdaily.co.kr/site/data/html/2021/02/08/2021020800178.html
+http://www.fntimes.com/html/view.php?ud=202102080710229423ab9144a775_18
+http://www.sentv.co.kr/news/view/588216
+http://www.newsis.com/view/?id=NISX20210207_0001332266&cID=10811&pID=10800
+http://www.goodmorningcc.com/news/articleView.html?idxno=246051
+http://www.shinailbo.co.kr/news/articleView.html?idxno=1375268
+totalUrl : https://search.naver.com/search.naver?&where=news&query=12일&pd=1&ds=2021.02.05&de=2021.02.12&mynews=0&cluster_rank=1&start=21
+http://www.edaily.co.kr/news/newspath.asp?newsid=01676086628948224
+http://www.segye.com/content/html/2021/02/02/20210202512696.html?OutUrl=naver
+http://yna.kr/AKR20210204115700054?did=1195m
+http://biz.newdaily.co.kr/site/data/html/2021/02/04/2021020400102.html
+https://www.lawtimes.co.kr/Legal-News/Legal-News-View?serial=167871
+http://www.mydaily.co.kr/new_yk/html/read.php?newsid=202102051121311980&ext=na
+https://sports.donga.com/article/all/20210203/105251523/1
+http://www.newsis.com/view/?id=NISX20210203_0001327930&cID=10401&pID=10400
+http://www.edaily.co.kr/news/newspath.asp?newsid=01203766628947896
+https://www.news1.kr/articles/?4200528
+totalUrl : https://search.naver.com/search.naver?&where=news&query=12일&pd=1&ds=2021.02.05&de=2021.02.12&mynews=0&cluster_rank=1&start=31
+https://www.news1.kr/articles/?4202847
+http://news.mt.co.kr/mtview.php?no=2021020709314975417
+https://view.asiae.co.kr/article/2021020513493932895
+http://www.idomin.com/news/articleView.html?idxno=752381
+http://news.heraldcorp.com/view.php?ud=20210205000063
+https://news.bbsi.co.kr/news/articleView.html?idxno=3021173
+http://www.ajunews.com/view/20210207114309860
+http://gamefocus.co.kr/detail.php?number=114323
+http://news.heraldcorp.com/village/view.php?ud=202102022101501638873_10
+http://www.edaily.co.kr/news/newspath.asp?newsid=01394006628946584
+totalUrl : https://search.naver.com/search.naver?&where=news&query=12일&pd=1&ds=2021.02.05&de=2021.02.12&mynews=0&cluster_rank=1&start=41
+https://www.pressian.com/pages/articles/2021020214564160344?utm_source=naver&utm_medium=search
+https://www.news1.kr/articles/?4205487
+http://www.kukinews.com/newsView/kuk202102040115
+https://sports.donga.com/article/all/20210202/105241226/1
+http://www.newscj.com/news/articleView.html?idxno=827387
+http://www.newsrep.co.kr/news/articleView.html?idxno=168087
+http://mksports.co.kr/view/2021/121893/
+http://www.fnnews.com/news/202102031009122975
+http://www.ajunews.com/view/20210207145510981
+http://yna.kr/AKR20210202108500065?did=1195m
+totalUrl : https://search.naver.com/search.naver?&where=news&query=12일&pd=1&ds=2021.02.05&de=2021.02.12&mynews=0&cluster_rank=1&start=51
+http://news.mk.co.kr/newsRead.php?no=118697&year=2021
+http://www.ccnnews.co.kr/news/articleView.html?idxno=207845
+http://yna.kr/AKR20210202038100094?did=1195m
+http://biz.newdaily.co.kr/site/data/html/2021/02/01/2021020100060.html
+http://sports.chosun.com/news/ntype.htm?id=202102010100011840000635&servicedate=20210201
+https://www.nocutnews.co.kr/news/5491849
+http://www.btnnews.tv/news/articleView.html?idxno=64825
+http://www.incheonnews.com/news/articleView.html?idxno=400571
+http://www.newsis.com/view/?id=NISX20210131_0001324231&cID=13001&pID=13000
+http://www.jeollailbo.com/news/articleView.html?idxno=619367
+totalUrl : https://search.naver.com/search.naver?&where=news&query=12일&pd=1&ds=2021.02.05&de=2021.02.12&mynews=0&cluster_rank=1&start=61
+http://www.businesspost.co.kr/BP?command=article_view&num=215719
+https://www.chosun.com/national/transport-environment/2021/02/06/GITZEWKPENGKRM4NZXFQEY3XNY/?utm_source=naver&utm_medium=referral&utm_campaign=naver-news
+https://www.news1.kr/articles/?4202145
+http://www.newsis.com/view/?id=NISX20210204_0001329454&cID=10808&pID=10800
+http://www.getnews.co.kr/news/articleView.html?idxno=513567
+http://www.sportsworldi.com/newsView/20210202516309
+http://www.dongascience.com/news/view/43647
+http://www.newsrep.co.kr/news/articleView.html?idxno=168470
+https://www.donga.com/news/article/all/20210204/105290030/1
+http://www.shinailbo.co.kr/news/articleView.html?idxno=1372789
+totalUrl : https://search.naver.com/search.naver?&where=news&query=12일&pd=1&ds=2021.02.05&de=2021.02.12&mynews=0&cluster_rank=1&start=71
+https://www.news1.kr/articles/?4198573
+http://www.newskr.kr/news/articleView.html?idxno=58192
+https://view.asiae.co.kr/article/2021020308372231010
+http://ch1.skbroadband.com/content/view?parent_no=24&content_no=54&p_no=116340
+http://news.mt.co.kr/mtview.php?no=2021020211262342340
+http://www.osen.co.kr/article/G1111517825
+http://www.dkilbo.com/news/articleView.html?idxno=324159
+http://www.kbsm.net/default/index_view_page.php?idx=301554&part_idx=320
+http://mbnmoney.mbn.co.kr/news/view?news_no=MM1004253675
+http://www.cnbnews.com/news/article.html?no=478222
+totalUrl : https://search.naver.com/search.naver?&where=news&query=12일&pd=1&ds=2021.02.05&de=2021.02.12&mynews=0&cluster_rank=1&start=81
+http://www.ajunews.com/view/20210202112402747
+http://www.gamechosun.co.kr/webzine/article/view.php?no=172189
+http://www.incheonilbo.com/news/articleView.html?idxno=1078069
+https://sports.donga.com/article/all/20210201/105224171/2
+http://www.epnc.co.kr/news/articleView.html?idxno=200342
+http://www.newsworks.co.kr/news/articleView.html?idxno=524890
+https://www.econovill.com/news/articleView.html?idxno=517778
+http://www.newsis.com/view/?id=NISX20210204_0001329832&cID=10201&pID=10200
+http://www.youthdaily.co.kr/news/article.html?no=61311
+http://www.nbntv.co.kr/news/articleView.html?idxno=917895
+totalUrl : https://search.naver.com/search.naver?&where=news&query=12일&pd=1&ds=2021.02.05&de=2021.02.12&mynews=0&cluster_rank=1&start=91
+http://www.siminilbo.co.kr/news/newsview.php?ncode=1065595571968328
+http://www.idsn.co.kr/news/articleView.html?idxno=40529
+https://www.asiatoday.co.kr/view.php?key=20210202010000957
+http://www.pinpointnews.co.kr/view.php?ud=202102080815512828861beb2d9d_45
+https://www.asiatoday.co.kr/view.php?key=20210203010002541
+http://news.kbs.co.kr/news/view.do?ncd=5113629&ref=A
+http://yna.kr/AKR20210208148900005?did=1195m
+https://www.hankyung.com/economy/article/2021020812901
+http://www.xportsnews.com/?ac=article_view&entry_id=1387410
+https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=106&oid=438&aid=0000033082
+totalUrl : https://search.naver.com/search.naver?&where=news&query=13일&pd=1&ds=2021.02.06&de=2021.02.13&mynews=0&cluster_rank=1&start=01
+http://www.yonhapnewstv.co.kr/MYH20210208013400038/?did=1825m
+https://imnews.imbc.com/news/2021/society/article/6082302_34873.html
+http://www.busan.com/view/busan/view.php?code=2021020719045243253
+https://www.sedaily.com/NewsView/22IGB8FB93
+https://www.nocutnews.co.kr/news/5496977
+http://ujnews.co.kr/news/newsview.php?ncode=1065601207091648
+http://www.lec.co.kr/news/articleView.html?idxno=725305
+http://www.fnnews.com/news/202102081128431559
+https://news.appstory.co.kr/14243
+https://www.nocutnews.co.kr/news/5496640
+totalUrl : https://search.naver.com/search.naver?&where=news&query=13일&pd=1&ds=2021.02.06&de=2021.02.13&mynews=0&cluster_rank=1&start=11
+http://yna.kr/AKR20210203034000530?did=1195m
+https://www.ytn.co.kr/_ln/0103_202102081929305566
+https://zdnet.co.kr/view/?no=20210207112639
+http://www.segye.com/content/html/2021/02/05/20210205513913.html?OutUrl=naver
+http://news.kmib.co.kr/article/view.asp?arcid=0015497172&code=61121111&cp=nv
+http://www.gnnews.co.kr/news/articleView.html?idxno=467297
+https://news.appstory.co.kr/14243
+http://yna.kr/AKR20210204137400004?did=1195m
+http://www.m-i.kr/news/articleView.html?idxno=794586
+http://yna.kr/AKR20210204101400065?did=1195m
+totalUrl : https://search.naver.com/search.naver?&where=news&query=13일&pd=1&ds=2021.02.06&de=2021.02.13&mynews=0&cluster_rank=1&start=21
+https://www.chosun.com/national/regional/yeongnam/2021/02/05/XOZCARYOKZBE7HYE25ELXJQM64/?utm_source=naver&utm_medium=referral&utm_campaign=naver-news
+https://news.joins.com/article/olink/23580695
+http://isplus.live.joins.com/news/article/article.asp?total_id=23986844
+http://www.newscape.co.kr/news/view.php?idx=59537
+http://www.newsis.com/view/?id=NISX20210205_0001331230&cID=10812&pID=10800
+http://sports.chosun.com/news/ntype.htm?id=202102040100028850001744&servicedate=20210203
+https://view.asiae.co.kr/article/2021020310264820908
+https://view.asiae.co.kr/article/2021020515072817581
+http://news.kbs.co.kr/news/view.do?ncd=5112845&ref=A
+http://www.kbsm.net/default/index_view_page.php?idx=301887&part_idx=320
+totalUrl : https://search.naver.com/search.naver?&where=news&query=13일&pd=1&ds=2021.02.06&de=2021.02.13&mynews=0&cluster_rank=1&start=31
+http://www.domin.co.kr/news/articleView.html?idxno=1327940
+http://www.joongboo.com/news/articleView.html?idxno=363471605
+https://www.ebn.co.kr/news/view/1470556/?sc=Naver
+http://www.cnbnews.com/news/article.html?no=478353
+https://www.hankyung.com/international/article/2021020357777
+http://www.mydaily.co.kr/new_yk/html/read.php?newsid=202102051849962712&ext=na
+http://www.newsworks.co.kr/news/articleView.html?idxno=524762
+http://www.sportsseoul.com/news/read/1008825?ref=naver
+https://www.etoday.co.kr/news/view/1992741
+http://www.kukinews.com/newsView/kuk202102030450
+totalUrl : https://search.naver.com/search.naver?&where=news&query=13일&pd=1&ds=2021.02.06&de=2021.02.13&mynews=0&cluster_rank=1&start=41
+https://www.g1tv.co.kr/index.php?type=newsLine&page=1&nth=0&viewNum=240748
+http://www.xportsnews.com/?ac=article_view&entry_id=1386582
+http://yna.kr/AKR20210202163600007?did=1195m
+http://biz.newdaily.co.kr/site/data/html/2021/02/03/2021020300102.html
+https://www.ytn.co.kr/_sn/0117_202102011603033367
+http://www.viva100.com/main/view.php?key=20210201010000250
+http://news.kbs.co.kr/news/view.do?ncd=5111892&ref=A
+http://www.newsquest.co.kr/news/articleView.html?idxno=81436
+https://www.sedaily.com/NewsView/22IE19860I
+http://news.kbs.co.kr/news/view.do?ncd=5111132&ref=A
+totalUrl : https://search.naver.com/search.naver?&where=news&query=13일&pd=1&ds=2021.02.06&de=2021.02.13&mynews=0&cluster_rank=1&start=51
+https://news.bbsi.co.kr/news/articleView.html?idxno=3020776
+http://www.seoulfn.com/news/articleView.html?idxno=409446
+http://www.cnbnews.com/news/article.html?no=478613
+http://www.epnc.co.kr/news/articleView.html?idxno=200469
+https://www.hankyung.com/entertainment/article/2021020209917
+http://www.ecomedia.co.kr/news/newsview.php?ncode=1065577811879269
+https://www.yeongnam.com/web/view.php?key=20210203010000434
+http://www.kihoilbo.co.kr/news/articleView.html?idxno=909141
+http://www.cnbnews.com/news/article.html?no=478222
+http://www.idjnews.kr/news/articleView.html?idxno=128335
+totalUrl : https://search.naver.com/search.naver?&where=news&query=13일&pd=1&ds=2021.02.06&de=2021.02.13&mynews=0&cluster_rank=1&start=61
+http://www.onews.tv/news/articleView.html?idxno=47494
+http://www.g-enews.com/ko-kr/news/article/news_all/202102051217069280e8b8a793f7_1/article.html
+http://theviewers.co.kr/View.aspx?No=1433629
+http://www.newscj.com/news/articleView.html?idxno=825023
+http://www.gukjenews.com/news/articleView.html?idxno=2158449
+https://biz.chosun.com/site/data/html_dir/2021/02/08/2021020801730.html?utm_source=naver&utm_medium=original&utm_campaign=biz
+https://www.hankyung.com/economy/article/2021020812901
+https://news.sbs.co.kr/news/endPage.do?news_id=N1006202285&plink=ORI&cooper=NAVER
+https://news.joins.com/article/olink/23582730
+https://biz.chosun.com/site/data/html_dir/2021/02/08/2021020801777.html?utm_source=naver&utm_medium=original&utm_campaign=biz
+totalUrl : https://search.naver.com/search.naver?&where=news&query=13일&pd=1&ds=2021.02.06&de=2021.02.13&mynews=0&cluster_rank=1&start=71
+https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=106&oid=438&aid=0000033082
+https://news.jtbc.joins.com/article/article.aspx?news_id=NB11991552
+http://www.fnnews.com/news/202102081048100682
+http://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0002718023&CMPT_CD=P0010&utm_source=naver&utm_medium=newsearch&utm_campaign=naver_news
+http://www.newsis.com/view/?id=NISX20210208_0001333372&cID=10803&pID=14000
+http://www.hani.co.kr/arti/politics/assembly/982126.html
+https://www.sedaily.com/NewsView/22IGAE0367
+https://www.seoul.co.kr/news/newsView.php?id=20210208500002&wlog_tag3=naver
+https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=106&oid=438&aid=0000033077
+http://www.etnews.com/20210208000003
+totalUrl : https://search.naver.com/search.naver?&where=news&query=13일&pd=1&ds=2021.02.06&de=2021.02.13&mynews=0&cluster_rank=1&start=81
+http://www.fnnews.com/news/202102081137527770
+https://www.news1.kr/articles/?4206023
+http://www.newsis.com/view/?id=NISX20210208_0001332896&cID=10201&pID=10200
+http://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0002717731&CMPT_CD=P0010&utm_source=naver&utm_medium=newsearch&utm_campaign=naver_news
+http://news.tf.co.kr/read/ptoday/1841952.htm
+http://yna.kr/AKR20210208122700005?did=1195m
+http://www.idaegu.com/newsView/idg202102080018
+http://www.ichannela.com/news/main/news_detailPage.do?publishId=000000238014
+https://news.imaeil.com/Society/2021020821350663405
+http://yna.kr/AKR20210206043500002?did=1195m
+totalUrl : https://search.naver.com/search.naver?&where=news&query=13일&pd=1&ds=2021.02.06&de=2021.02.13&mynews=0&cluster_rank=1&start=91
+https://www.seoul.co.kr/news/newsView.php?id=20210208500087&wlog_tag3=naver
+http://isplus.live.joins.com/news/article/article.asp?total_id=23988472
+http://www.newsis.com/view/?id=NISX20210207_0001332427&cID=15001&pID=15000
+https://game.donga.com/98449/
+http://news.khan.co.kr/kh_news/khan_art_view.html?artid=202102080802011&code=940100
+https://www.hankyung.com/society/article/2021020813971
+http://www.fnnews.com/news/202102080959343183
+http://news.khan.co.kr/kh_news/khan_art_view.html?artid=202102082059015&code=940601
+http://yna.kr/AKR20210208000400071?did=1195m
+https://www.news1.kr/articles/?4206808
+totalUrl : https://search.naver.com/search.naver?&where=news&query=14일&pd=1&ds=2021.02.07&de=2021.02.14&mynews=0&cluster_rank=1&start=01
+https://tenasia.hankyung.com/music/article/2021020809624
+http://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0002718023&CMPT_CD=P0010&utm_source=naver&utm_medium=newsearch&utm_campaign=naver_news
+http://news.heraldcorp.com/view.php?ud=20210208000213
+https://view.asiae.co.kr/article/2021020809323842467
+http://sports.chosun.com/news/ntype.htm?id=202102090100066500004257&servicedate=20210208
+https://www.news1.kr/articles/?4205925
+http://www.dt.co.kr/contents.html?article_no=2021020902101758051004&ref=naver
+https://news.sbs.co.kr/news/endPage.do?news_id=N1006201033&plink=ORI&cooper=NAVER
+http://www.newsis.com/view/?id=NISX20210208_0001333957&cID=10817&pID=14000
+http://www.shinailbo.co.kr/news/articleView.html?idxno=1375687
+totalUrl : https://search.naver.com/search.naver?&where=news&query=14일&pd=1&ds=2021.02.07&de=2021.02.14&mynews=0&cluster_rank=1&start=11
+http://edu.donga.com/?p=article&ps=view&at_no=20210208095353206702
+https://biz.sbs.co.kr/article_hub/20000003264?division=NAVER
+https://biz.chosun.com/site/data/html_dir/2021/02/06/2021020600395.html?utm_source=naver&utm_medium=original&utm_campaign=biz
+http://www.kyeonggi.com/news/articleView.html?idxno=2345840
+http://www.edaily.co.kr/news/newspath.asp?newsid=03873686628948552
+http://www.inews24.com/view/1341387
+http://news.kbiz.or.kr/news/articleView.html?idxno=77757
+http://www.cbci.co.kr/news/articleView.html?idxno=411259
+http://www.newsis.com/view/?id=NISX20210208_0001334147&cID=10803&pID=14000
+http://news.kbs.co.kr/news/view.do?ncd=5113149&ref=A
+totalUrl : https://search.naver.com/search.naver?&where=news&query=14일&pd=1&ds=2021.02.07&de=2021.02.14&mynews=0&cluster_rank=1&start=21
+http://www.newstnt.com/news/articleView.html?idxno=71722
+http://www.edaily.co.kr/news/newspath.asp?newsid=02020486628948224
+http://www.dt.co.kr/contents.html?article_no=2021020802101758051003&ref=naver
+http://www.rookie.co.kr/news/articleView.html?idxno=57406
+http://sports.chosun.com/news/ntype.htm?id=202102080100064060004103&servicedate=20210208
+http://cc.newdaily.co.kr/site/data/html/2021/02/07/2021020700028.html
+http://www.sisajournal.com/news/articleView.html?idxno=211713
+http://www.joseilbo.com/news/news_read.php?uid=416582&class=33&grp=
+http://www.cnbnews.com/news/article.html?no=479039
+http://yna.kr/AKR20210204088200001?did=1195m
+totalUrl : https://search.naver.com/search.naver?&where=news&query=14일&pd=1&ds=2021.02.07&de=2021.02.14&mynews=0&cluster_rank=1&start=31
+http://news.lghellovision.net/news/newsView.do?soCode=SC40000000&idx=301805
+https://news.imaeil.com/Society/2021020611012394166
+https://news.joins.com/article/olink/23580600
+http://yna.kr/AKR20210206022000530?did=1195m
+https://view.asiae.co.kr/article/2021020407150475085
+http://ch1.skbroadband.com/content/view?parent_no=24&content_no=64&p_no=116710
+http://news.heraldcorp.com/view.php?ud=20210204000038
+http://www.newsis.com/view/?id=NISX20210206_0001332070&cID=10811&pID=10800
+http://www.jbnews.com/news/articleView.html?idxno=1326110
+https://www.ytn.co.kr/_ln/0101_202102040835419758
+totalUrl : https://search.naver.com/search.naver?&where=news&query=14일&pd=1&ds=2021.02.07&de=2021.02.14&mynews=0&cluster_rank=1&start=41
+https://news.joins.com/article/olink/23581884
+http://4th.kr/View.aspx?No=1435677
+http://yna.kr/AKR20210204066600054?did=1195m
+https://www.donga.com/news/article/all/20210204/105272353/1
+http://news.kbs.co.kr/news/view.do?ncd=5112893&ref=A
+https://www.inews365.com/news/article.html?no=654670
+http://news.kmib.co.kr/article/view.asp?arcid=0015500949&code=61111111&cp=nv
+http://yna.kr/AKR20210205137800005?did=1195m
+http://www.newsworks.co.kr/news/articleView.html?idxno=526375
+https://news.joins.com/article/olink/23580858
+totalUrl : https://search.naver.com/search.naver?&where=news&query=14일&pd=1&ds=2021.02.07&de=2021.02.14&mynews=0&cluster_rank=1&start=51
+https://mbcgn.kr/article/ZVtUfEn1_l
+http://news.mt.co.kr/mtview.php?no=2021020616161989853
+https://www.fetv.co.kr/news/article.html?no=75963
+http://www.chungnamilbo.co.kr/news/articleView.html?idxno=584253
+http://www.edaily.co.kr/news/newspath.asp?newsid=01390726628947568
+http://yna.kr/AKR20210201045052504?did=1195m
+http://www.dkilbo.com/news/articleView.html?idxno=324935
+https://www.fetv.co.kr/news/article.html?no=76040
+https://view.asiae.co.kr/article/2021020216484833876
+http://www.bosa.co.kr/news/articleView.html?idxno=2143857
+totalUrl : https://search.naver.com/search.naver?&where=news&query=14일&pd=1&ds=2021.02.07&de=2021.02.14&mynews=0&cluster_rank=1&start=61
+http://yna.kr/AKR20210205078000530?did=1195m
+http://www.viva100.com/main/view.php?key=20210206010001788
+http://www.kyeonggi.com/news/articleView.html?idxno=2345522
+https://biz.chosun.com/site/data/html_dir/2021/02/05/2021020501043.html?utm_source=naver&utm_medium=original&utm_campaign=biz
+http://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0002717287&CMPT_CD=P0010&utm_source=naver&utm_medium=newsearch&utm_campaign=naver_news
+http://yna.kr/AKR20210204029400530?did=1195m
+http://www.boannews.com/media/view.asp?idx=94741&kind=
+https://view.asiae.co.kr/article/2021020118491783147
+https://biz.chosun.com/site/data/html_dir/2021/02/01/2021020101145.html?utm_source=naver&utm_medium=original&utm_campaign=biz
+https://www.news1.kr/articles/?4204211
+totalUrl : https://search.naver.com/search.naver?&where=news&query=14일&pd=1&ds=2021.02.07&de=2021.02.14&mynews=0&cluster_rank=1&start=71
+http://www.iusm.co.kr/news/articleView.html?idxno=900694
+https://news.appstory.co.kr/14244
+http://yna.kr/AKR20210203096400064?did=1195m
+http://www.edaily.co.kr/news/newspath.asp?newsid=01439926628947896
+http://www.hani.co.kr/arti/area/yeongnam/981649.html
+http://www.edaily.co.kr/news/newspath.asp?newsid=01426806628947896
+http://news.tf.co.kr/read/ptoday/1841625.htm
+http://www.dt.co.kr/contents.html?article_no=2021020702109931820001&ref=naver
+http://www.ilovepc.co.kr/news/articleView.html?idxno=37962
+http://www.newsis.com/view/?id=NISX20210205_0001331335&cID=10809&pID=10800
+totalUrl : https://search.naver.com/search.naver?&where=news&query=14일&pd=1&ds=2021.02.07&de=2021.02.14&mynews=0&cluster_rank=1&start=81
+https://www.econovill.com/news/articleView.html?idxno=517634
+http://www.newsis.com/view/?id=NISX20210205_0001330866&cID=13001&pID=13000
+http://www.dkilbo.com/news/articleView.html?idxno=324516
+https://www.news1.kr/articles/?4204424
+http://www.kyongbuk.co.kr/news/articleView.html?idxno=2067593
+http://yna.kr/AKR20210204133000060?did=1195m
+http://www.lecturernews.com/news/articleView.html?idxno=60845
+http://www.newsis.com/view/?id=NISX20210203_0001327956&cID=13001&pID=13000
+http://www.newsis.com/view/?id=NISX20210204_0001330359&cID=10810&pID=10800
+http://sports.chosun.com/news/ntype.htm?id=202102060100048820003064&servicedate=20210205
+totalUrl : https://search.naver.com/search.naver?&where=news&query=14일&pd=1&ds=2021.02.07&de=2021.02.14&mynews=0&cluster_rank=1&start=91
+https://www.news1.kr/articles/?4204135
+http://kookbang.dema.mil.kr/newsWeb/20210208/2/BBSMSTR_000000010031/view.do
+http://www.newspim.com/news/view/20210206000052
+https://www.pressian.com/pages/articles/2021020402403068685?utm_source=naver&utm_medium=search
+http://yna.kr/PYH20210203127500013?did=1196m
+http://www.nspna.com/news/?mode=view&newsid=482427
+https://www.news1.kr/articles/?4203504
+https://www.econovill.com/news/articleView.html?idxno=517640
+http://www.smartfn.co.kr/view.php?ud=202102081710066525d5d29c6899_46
+https://www.news1.kr/articles/?4201428
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

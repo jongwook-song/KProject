@@ -1,0 +1,11 @@
+[J0001] 의존성 설정 파일 build.gradle
+[J0002] cross domain 설정
+[J0003] querydsl 설정
+[J0004] 날짜별 뉴스 가져오기
+[J0005] 날짜 선택 - react
+[J0006] 뉴스 정보 크롤링
+
+
+// 디비 관련 정보
+News : 수집한 뉴스의 정보 저장
+History : 사용자들이 보는 뉴스 정보 (userinfo id? 혹은 사용자 이름 넣을 예정)
