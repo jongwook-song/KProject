@@ -1,0 +1,9 @@
+.news-content-info{
+    display: inline-block;
+    width: calc( 100% - 275px);
+}
+
+.img-div{
+    display: inline-block;
+    text-align: left;
+}
