@@ -13,7 +13,18 @@ class NewsList extends React.Component {
         this.props.onSearchBtn( this.state.searchText);
     }
 
+    handleKeyPress = (e) => {
+        // if(e.charCode === 13) { //  deprecated
+        //   this.handleClick();
+        // }
+
+        if (e.key === "Enter") {
+          this.props.onSearchBtn( this.state.searchText);
+        }
+    };
+
     onSearch = event => {
+        this.props.updateText();
         this.setState({ [event.target.name]:event.target.value});
     };
 
@@ -53,7 +64,8 @@ class NewsList extends React.Component {
             <div className="new-list-div">
                 { this.props.date !== null ?
                 <div className="search-div">
-                    <input type="text" name="searchText" className="search-detail" onChange={this.onSearch}/>
+                    <input type="text" name="searchText" className="search-detail" value={this.props.flagUpdateText === true ? this.props.searchText : this.state.searchText}
+                        onChange={this.onSearch} onKeyPress={this.handleKeyPress}/>
                     <button className="search-btn" onClick={(event) => {this.onSearchBtn()}} >검색</button>
                 </div>
                 :
@@ -65,10 +77,10 @@ class NewsList extends React.Component {
                         <div key={news.id} className={index === arrNews.length-1 ? 'news-content last' : 'news-content'}>
                             <div className="news-content-info">
                                 <div className="news-title" onClick={() => window.open([news.url],'_blank')}>
-                                    <span>{news.title}</span>
+                                    <span dangerouslySetInnerHTML={ {__html:news.title} }></span>
                                 </div>
                                 <div>
-                                    <span>{news.content}</span>
+                                    <span dangerouslySetInnerHTML={ {__html:news.content} }></span>
                                 </div>
                             </div>
                         </div>

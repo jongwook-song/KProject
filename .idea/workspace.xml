@@ -23,7 +23,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1b02dd11-fb2f-4664-8549-dbd424d4c80f" name="Default Changelist" comment="paging">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.2/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.2/fileContent/fileContent.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.2/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.2/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.2/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.2/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.2/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.2/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.2/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.2/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.2/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.2/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.2/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.2/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.2/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.2/taskHistory/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.2/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.2/taskHistory/taskHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/KProject-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/KProject-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/com.stock.news.service.news.NewsServiceTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/com.stock.news.service.news.NewsServiceTest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/com.stock.news.web.news.NewsReadControllerTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/com.stock.news.web.news.NewsReadControllerTest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/com.stock.news.service.news.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/com.stock.news.service.news.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/com.stock.news.web.news.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/com.stock.news.web.news.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/static/asset-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/static/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/static/js/main.b42d1066.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/static/js/main.b42d1066.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-com.stock.news.service.news.NewsServiceTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-com.stock.news.service.news.NewsServiceTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-com.stock.news.web.news.NewsReadControllerTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-com.stock.news.web.news.NewsReadControllerTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/frontend/src/stock/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/src/stock/Main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/frontend/src/stock/content/NewsList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/src/stock/content/NewsList.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,7 +199,21 @@
       <option name="project" value="LOCAL" />
       <updated>1614097830929</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="paging">
+      <created>1614099645446</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1614099645446</updated>
+    </task>
+    <task id="LOCAL-00006" summary="paging">
+      <created>1614099748692</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1614099748692</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -190,62 +233,62 @@
     <option name="LAST_COMMIT_MESSAGE" value="paging" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1878" height="290" key="GridCell.Tab.0.bottom" timestamp="1614097157991">
+    <state width="1878" height="370" key="GridCell.Tab.0.bottom" timestamp="1614102266474">
       <screen x="-1920" y="23" width="1920" height="1057" />
     </state>
-    <state width="1878" height="290" key="GridCell.Tab.0.bottom/-1920.23.1920.1057/0.23.1680.1027@-1920.23.1920.1057" timestamp="1614097157991" />
+    <state width="1878" height="370" key="GridCell.Tab.0.bottom/-1920.23.1920.1057/0.23.1680.1027@-1920.23.1920.1057" timestamp="1614102266474" />
     <state width="1638" height="346" key="GridCell.Tab.0.bottom/-1920.23.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1613834309193" />
     <state width="1638" height="358" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1613908644980" />
-    <state width="1878" height="290" key="GridCell.Tab.0.center" timestamp="1614097157990">
+    <state width="1878" height="370" key="GridCell.Tab.0.center" timestamp="1614102266473">
       <screen x="-1920" y="23" width="1920" height="1057" />
     </state>
-    <state width="1878" height="290" key="GridCell.Tab.0.center/-1920.23.1920.1057/0.23.1680.1027@-1920.23.1920.1057" timestamp="1614097157990" />
+    <state width="1878" height="370" key="GridCell.Tab.0.center/-1920.23.1920.1057/0.23.1680.1027@-1920.23.1920.1057" timestamp="1614102266473" />
     <state width="1638" height="346" key="GridCell.Tab.0.center/-1920.23.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1613834309192" />
     <state width="1638" height="358" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1613908644980" />
-    <state width="1878" height="290" key="GridCell.Tab.0.left" timestamp="1614097157989">
+    <state width="1878" height="370" key="GridCell.Tab.0.left" timestamp="1614102266473">
       <screen x="-1920" y="23" width="1920" height="1057" />
     </state>
-    <state width="1878" height="290" key="GridCell.Tab.0.left/-1920.23.1920.1057/0.23.1680.1027@-1920.23.1920.1057" timestamp="1614097157989" />
+    <state width="1878" height="370" key="GridCell.Tab.0.left/-1920.23.1920.1057/0.23.1680.1027@-1920.23.1920.1057" timestamp="1614102266473" />
     <state width="1638" height="346" key="GridCell.Tab.0.left/-1920.23.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1613834309191" />
     <state width="1638" height="358" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1613908644980" />
-    <state width="1878" height="290" key="GridCell.Tab.0.right" timestamp="1614097157991">
+    <state width="1878" height="370" key="GridCell.Tab.0.right" timestamp="1614102266474">
       <screen x="-1920" y="23" width="1920" height="1057" />
     </state>
-    <state width="1878" height="290" key="GridCell.Tab.0.right/-1920.23.1920.1057/0.23.1680.1027@-1920.23.1920.1057" timestamp="1614097157991" />
+    <state width="1878" height="370" key="GridCell.Tab.0.right/-1920.23.1920.1057/0.23.1680.1027@-1920.23.1920.1057" timestamp="1614102266474" />
     <state width="1638" height="346" key="GridCell.Tab.0.right/-1920.23.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1613834309193" />
     <state width="1638" height="358" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1613908644980" />
-    <state width="1878" height="370" key="GridCell.Tab.1.bottom" timestamp="1614096088120">
+    <state width="1878" height="370" key="GridCell.Tab.1.bottom" timestamp="1614102266400">
       <screen x="-1920" y="23" width="1920" height="1057" />
     </state>
-    <state width="1878" height="370" key="GridCell.Tab.1.bottom/-1920.23.1920.1057/0.23.1680.1027@-1920.23.1920.1057" timestamp="1614096088120" />
+    <state width="1878" height="370" key="GridCell.Tab.1.bottom/-1920.23.1920.1057/0.23.1680.1027@-1920.23.1920.1057" timestamp="1614102266400" />
     <state width="1638" height="346" key="GridCell.Tab.1.bottom/-1920.23.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1613834309195" />
     <state width="1638" height="358" key="GridCell.Tab.1.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1613908644981" />
-    <state width="1878" height="370" key="GridCell.Tab.1.center" timestamp="1614096088120">
+    <state width="1878" height="370" key="GridCell.Tab.1.center" timestamp="1614102266399">
       <screen x="-1920" y="23" width="1920" height="1057" />
     </state>
-    <state width="1878" height="370" key="GridCell.Tab.1.center/-1920.23.1920.1057/0.23.1680.1027@-1920.23.1920.1057" timestamp="1614096088120" />
+    <state width="1878" height="370" key="GridCell.Tab.1.center/-1920.23.1920.1057/0.23.1680.1027@-1920.23.1920.1057" timestamp="1614102266399" />
     <state width="1638" height="346" key="GridCell.Tab.1.center/-1920.23.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1613834309195" />
     <state width="1638" height="358" key="GridCell.Tab.1.center/0.23.1680.1027@0.23.1680.1027" timestamp="1613908644981" />
-    <state width="1878" height="370" key="GridCell.Tab.1.left" timestamp="1614096088119">
+    <state width="1878" height="370" key="GridCell.Tab.1.left" timestamp="1614102266399">
       <screen x="-1920" y="23" width="1920" height="1057" />
     </state>
-    <state width="1878" height="370" key="GridCell.Tab.1.left/-1920.23.1920.1057/0.23.1680.1027@-1920.23.1920.1057" timestamp="1614096088119" />
+    <state width="1878" height="370" key="GridCell.Tab.1.left/-1920.23.1920.1057/0.23.1680.1027@-1920.23.1920.1057" timestamp="1614102266399" />
     <state width="1638" height="346" key="GridCell.Tab.1.left/-1920.23.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1613834309194" />
     <state width="1638" height="358" key="GridCell.Tab.1.left/0.23.1680.1027@0.23.1680.1027" timestamp="1613908644981" />
-    <state width="1878" height="370" key="GridCell.Tab.1.right" timestamp="1614096088120">
+    <state width="1878" height="370" key="GridCell.Tab.1.right" timestamp="1614102266400">
       <screen x="-1920" y="23" width="1920" height="1057" />
     </state>
-    <state width="1878" height="370" key="GridCell.Tab.1.right/-1920.23.1920.1057/0.23.1680.1027@-1920.23.1920.1057" timestamp="1614096088120" />
+    <state width="1878" height="370" key="GridCell.Tab.1.right/-1920.23.1920.1057/0.23.1680.1027@-1920.23.1920.1057" timestamp="1614102266400" />
     <state width="1638" height="346" key="GridCell.Tab.1.right/-1920.23.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1613834309195" />
     <state width="1638" height="358" key="GridCell.Tab.1.right/0.23.1680.1027@0.23.1680.1027" timestamp="1613908644981" />
-    <state x="-1360" y="291" key="Vcs.Push.Dialog.v2" timestamp="1614097847629">
+    <state x="-1360" y="291" key="Vcs.Push.Dialog.v2" timestamp="1614099791285">
       <screen x="-1920" y="23" width="1920" height="1057" />
     </state>
-    <state x="-1360" y="291" key="Vcs.Push.Dialog.v2/-1920.23.1920.1057/0.23.1680.1027@-1920.23.1920.1057" timestamp="1614097847629" />
-    <state x="-1343" y="257" width="670" height="676" key="search.everywhere.popup" timestamp="1614091693779">
+    <state x="-1360" y="291" key="Vcs.Push.Dialog.v2/-1920.23.1920.1057/0.23.1680.1027@-1920.23.1920.1057" timestamp="1614099791285" />
+    <state x="-1343" y="257" width="670" height="676" key="search.everywhere.popup" timestamp="1614102095099">
       <screen x="-1920" y="23" width="1920" height="1057" />
     </state>
-    <state x="-1343" y="257" width="670" height="676" key="search.everywhere.popup/-1920.23.1920.1057/0.23.1680.1027@-1920.23.1920.1057" timestamp="1614091693779" />
+    <state x="-1343" y="257" width="670" height="676" key="search.everywhere.popup/-1920.23.1920.1057/0.23.1680.1027@-1920.23.1920.1057" timestamp="1614102095099" />
     <state x="505" y="250" key="search.everywhere.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1613757021608" />
   </component>
 </project>
