@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.stock.news.web.news.NewsReadControllerTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-02-23T17:02:06" hostname="wook-MacBook-Pro.local" time="0.085">
+  <properties/>
+  <testcase name="뉴스_정보_가져오기" classname="com.stock.news.web.news.NewsReadControllerTest" time="0.045"/>
+  <testcase name="뉴스_크롤링_테스트" classname="com.stock.news.web.news.NewsReadControllerTest" time="0.039"/>
+  <system-out><![CDATA[02:02:02.371 [Test worker] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.stock.news.web.news.NewsReadControllerTest]
+02:02:02.376 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+02:02:02.383 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+02:02:02.397 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.stock.news.web.news.NewsReadControllerTest] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+02:02:02.408 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.stock.news.web.news.NewsReadControllerTest], using SpringBootContextLoader
+02:02:02.411 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.stock.news.web.news.NewsReadControllerTest]: class path resource [com/stock/news/web/news/NewsReadControllerTest-context.xml] does not exist
+02:02:02.411 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.stock.news.web.news.NewsReadControllerTest]: class path resource [com/stock/news/web/news/NewsReadControllerTestContext.groovy] does not exist
+02:02:02.411 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.stock.news.web.news.NewsReadControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+02:02:02.412 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.stock.news.web.news.NewsReadControllerTest]: NewsReadControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+02:02:02.443 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.stock.news.web.news.NewsReadControllerTest]
+02:02:02.501 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/Users/wook/ProjectI/KProject/build/classes/java/main/com/stock/news/Application.class]
+02:02:02.502 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.stock.news.Application for test class com.stock.news.web.news.NewsReadControllerTest
+02:02:02.572 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.stock.news.web.news.NewsReadControllerTest]: using defaults.
+02:02:02.573 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+02:02:02.587 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@5e6929e7, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@56b3a9cc, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@b67305a, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@69c70a5d, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7e762093, org.springframework.test.context.transaction.TransactionalTestExecutionListener@35401b58, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@797084a, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@56d36f07, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@196eaff6, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@2c41fd58, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@13ab75c2, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@5ecd8be7]
+02:02:02.589 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.stock.news.web.news.NewsReadControllerTest]
+02:02:02.589 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.stock.news.web.news.NewsReadControllerTest]
+02:02:02.590 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.stock.news.web.news.NewsReadControllerTest]
+02:02:02.590 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.stock.news.web.news.NewsReadControllerTest]
+02:02:02.599 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@23f8cc69 testClass = NewsReadControllerTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@19fd3026 testClass = NewsReadControllerTest, locations = '{}', classes = '{class com.stock.news.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@6fa1cc1d, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@38f7d493, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@2faad833, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@21f98021], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true]], class annotated with @DirtiesContext [false] with mode [null].
+02:02:02.599 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.stock.news.web.news.NewsReadControllerTest]
+02:02:02.600 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.stock.news.web.news.NewsReadControllerTest]
+02:02:02.614 [Test worker] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=-1}
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.7.RELEASE)
+
+2021-02-24 02:02:02.965  INFO 5025 --- [    Test worker] c.s.n.web.news.NewsReadControllerTest    : Starting NewsReadControllerTest on wook-MacBook-Pro.local with PID 5025 (started by wook in /Users/wook/ProjectI/KProject)
+2021-02-24 02:02:02.966  INFO 5025 --- [    Test worker] c.s.n.web.news.NewsReadControllerTest    : The following profiles are active: real-db
+2021-02-24 02:02:03.390  INFO 5025 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-02-24 02:02:03.452  INFO 5025 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 55ms. Found 1 repository interfaces.
+2021-02-24 02:02:03.763  INFO 5025 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$eefd1d6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-24 02:02:03.932  INFO 5025 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-02-24 02:02:04.053  INFO 5025 --- [    Test worker] log4jdbc.log4j2                          : 1. Connection opened. {executed in 111ms} 
+2021-02-24 02:02:04.054  INFO 5025 --- [    Test worker] log4jdbc.log4j2                          : 1. Connection.new Connection returned 
+2021-02-24 02:02:04.054  INFO 5025 --- [    Test worker] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy.getNetworkTimeout()I)
+2021-02-24 02:02:04.054  INFO 5025 --- [    Test worker] log4jdbc.log4j2                          : 1. Connection.isReadOnly() returned false
+2021-02-24 02:02:04.054  INFO 5025 --- [    Test worker] log4jdbc.log4j2                          : 1. Connection.getAutoCommit() returned true
+2021-02-24 02:02:04.054  INFO 5025 --- [    Test worker] log4jdbc.log4j2                          : 1. Connection.isValid(1) returned true
+2021-02-24 02:02:04.057  INFO 5025 --- [    Test worker] log4jdbc.log4j2                          : 1. Connection.getTransactionIsolation() returned 4
+2021-02-24 02:02:04.059  INFO 5025 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-02-24 02:02:04.067  INFO 5025 --- [    Test worker] log4jdbc.log4j2                          : 1. Connection.getMetaData() returned org.mariadb.jdbc.MariaDbDatabaseMetaData@3bdb2b86
+2021-02-24 02:02:04.070  INFO 5025 --- [    Test worker] log4jdbc.log4j2                          : 1. Connection.clearWarnings() returned 
+2021-02-24 02:02:04.107  INFO 5025 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-02-24 02:02:04.153  INFO 5025 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2021-02-24 02:02:04.154  INFO 5025 --- [    Test worker] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2021-02-24 02:02:04.164  INFO 5025 --- [onnection adder] log4jdbc.log4j2                          : 2. Connection opened. {executed in 1ms} 
+2021-02-24 02:02:04.164  INFO 5025 --- [onnection adder] log4jdbc.log4j2                          : 2. Connection.new Connection returned 
+2021-02-24 02:02:04.164  INFO 5025 --- [onnection adder] log4jdbc.log4j2                          : 2. Connection.isReadOnly() returned false
+2021-02-24 02:02:04.164  INFO 5025 --- [onnection adder] log4jdbc.log4j2                          : 2. Connection.getAutoCommit() returned true
+2021-02-24 02:02:04.165  INFO 5025 --- [onnection adder] log4jdbc.log4j2                          : 3. Connection opened. {executed in 1ms} 
+2021-02-24 02:02:04.165  INFO 5025 --- [onnection adder] log4jdbc.log4j2                          : 3. Connection.new Connection returned 
+2021-02-24 02:02:04.165  INFO 5025 --- [onnection adder] log4jdbc.log4j2                          : 3. Connection.isReadOnly() returned false
+2021-02-24 02:02:04.165  INFO 5025 --- [onnection adder] log4jdbc.log4j2                          : 3. Connection.getAutoCommit() returned true
+2021-02-24 02:02:04.166  INFO 5025 --- [onnection adder] log4jdbc.log4j2                          : 4. Connection opened. {executed in 1ms} 
+2021-02-24 02:02:04.166  INFO 5025 --- [onnection adder] log4jdbc.log4j2                          : 4. Connection.new Connection returned 
+2021-02-24 02:02:04.166  INFO 5025 --- [onnection adder] log4jdbc.log4j2                          : 4. Connection.isReadOnly() returned false
+2021-02-24 02:02:04.167  INFO 5025 --- [onnection adder] log4jdbc.log4j2                          : 4. Connection.getAutoCommit() returned true
+2021-02-24 02:02:04.168  INFO 5025 --- [onnection adder] log4jdbc.log4j2                          : 5. Connection opened. {executed in 1ms} 
+2021-02-24 02:02:04.168  INFO 5025 --- [onnection adder] log4jdbc.log4j2                          : 5. Connection.new Connection returned 
+2021-02-24 02:02:04.168  INFO 5025 --- [onnection adder] log4jdbc.log4j2                          : 5. Connection.isReadOnly() returned false
+2021-02-24 02:02:04.168  INFO 5025 --- [onnection adder] log4jdbc.log4j2                          : 5. Connection.getAutoCommit() returned true
+2021-02-24 02:02:04.169  INFO 5025 --- [onnection adder] log4jdbc.log4j2                          : 6. Connection opened. {executed in 1ms} 
+2021-02-24 02:02:04.169  INFO 5025 --- [onnection adder] log4jdbc.log4j2                          : 6. Connection.new Connection returned 
+2021-02-24 02:02:04.169  INFO 5025 --- [onnection adder] log4jdbc.log4j2                          : 6. Connection.isReadOnly() returned false
+2021-02-24 02:02:04.169  INFO 5025 --- [onnection adder] log4jdbc.log4j2                          : 6. Connection.getAutoCommit() returned true
+2021-02-24 02:02:04.170  INFO 5025 --- [onnection adder] log4jdbc.log4j2                          : 7. Connection opened. {executed in 1ms} 
+2021-02-24 02:02:04.170  INFO 5025 --- [onnection adder] log4jdbc.log4j2                          : 7. Connection.new Connection returned 
+2021-02-24 02:02:04.170  INFO 5025 --- [onnection adder] log4jdbc.log4j2                          : 7. Connection.isReadOnly() returned false
+2021-02-24 02:02:04.170  INFO 5025 --- [onnection adder] log4jdbc.log4j2                          : 7. Connection.getAutoCommit() returned true
+2021-02-24 02:02:04.171  INFO 5025 --- [onnection adder] log4jdbc.log4j2                          : 8. Connection opened. {executed in 0ms} 
+2021-02-24 02:02:04.172  INFO 5025 --- [onnection adder] log4jdbc.log4j2                          : 8. Connection.new Connection returned 
+2021-02-24 02:02:04.172  INFO 5025 --- [onnection adder] log4jdbc.log4j2                          : 8. Connection.isReadOnly() returned false
+2021-02-24 02:02:04.172  INFO 5025 --- [onnection adder] log4jdbc.log4j2                          : 8. Connection.getAutoCommit() returned true
+2021-02-24 02:02:04.173  INFO 5025 --- [onnection adder] log4jdbc.log4j2                          : 9. Connection opened. {executed in 1ms} 
+2021-02-24 02:02:04.173  INFO 5025 --- [onnection adder] log4jdbc.log4j2                          : 9. Connection.new Connection returned 
+2021-02-24 02:02:04.173  INFO 5025 --- [onnection adder] log4jdbc.log4j2                          : 9. Connection.isReadOnly() returned false
+2021-02-24 02:02:04.173  INFO 5025 --- [onnection adder] log4jdbc.log4j2                          : 9. Connection.getAutoCommit() returned true
+2021-02-24 02:02:04.174  INFO 5025 --- [onnection adder] log4jdbc.log4j2                          : 10. Connection opened. {executed in 1ms} 
+2021-02-24 02:02:04.174  INFO 5025 --- [onnection adder] log4jdbc.log4j2                          : 10. Connection.new Connection returned 
+2021-02-24 02:02:04.174  INFO 5025 --- [onnection adder] log4jdbc.log4j2                          : 10. Connection.isReadOnly() returned false
+2021-02-24 02:02:04.174  INFO 5025 --- [onnection adder] log4jdbc.log4j2                          : 10. Connection.getAutoCommit() returned true
+2021-02-24 02:02:04.256  INFO 5025 --- [    Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2021-02-24 02:02:04.362  INFO 5025 --- [    Test worker] log4jdbc.log4j2                          : 1. Connection.getMetaData() returned org.mariadb.jdbc.MariaDbDatabaseMetaData@2d31038e
+2021-02-24 02:02:04.371  INFO 5025 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-02-24 02:02:04.397  INFO 5025 --- [    Test worker] log4jdbc.log4j2                          : 1. Connection.clearWarnings() returned 
+2021-02-24 02:02:04.849  INFO 5025 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-02-24 02:02:04.851  INFO 5025 --- [    Test worker] log4jdbc.log4j2                          : 1. Connection.getMetaData() returned org.mariadb.jdbc.MariaDbDatabaseMetaData@52ce8530
+2021-02-24 02:02:04.851  INFO 5025 --- [    Test worker] log4jdbc.log4j2                          : 1. Connection.clearWarnings() returned 
+2021-02-24 02:02:05.703  INFO 5025 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-24 02:02:05.750  WARN 5025 --- [    Test worker] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-02-24 02:02:05.788  INFO 5025 --- [    Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2021-02-24 02:02:06.033  INFO 5025 --- [    Test worker] c.s.n.web.news.NewsReadControllerTest    : Started NewsReadControllerTest in 3.411 seconds (JVM running for 4.085)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
