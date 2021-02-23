@@ -22,16 +22,16 @@ public class NewsReadControllerTest {
 
     @Test
     public void 뉴스_크롤링_테스트() throws Exception{
-        String test = newsService.batchExecute();
+        //String test = newsService.batchExecute();
         assertThat( "test").isEqualTo( "test");
     }
 
     @Test
     public void 뉴스_정보_가져오기() throws  Exception{
-        List<NewsListResponseDto> list = newsService.findByDate( "2021.02.08");
-
-        for( int i=0; i<list.size(); i++){
-            System.out.println(list.get(i).getTitle());
-        }
+//        List<NewsListResponseDto> list = newsService.findByDate( "2021.02.08");
+//
+//        for( int i=0; i<list.size(); i++){
+//            System.out.println(list.get(i).getTitle());
+//        }
     }
 }

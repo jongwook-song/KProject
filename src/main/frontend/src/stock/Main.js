@@ -12,7 +12,11 @@ class Main extends React.Component {
         super(props);
         this.state = {
             date : null,
-            newsList : null
+            newsList : null,
+            searchText : null,
+            pageInfo : { currentPage : 0,
+                        totalElements : -1,
+                        totalPages : -1}
         }
     }
 
@@ -21,37 +25,115 @@ class Main extends React.Component {
         this.setState({
             date : date
         })
-        console.log( "pdate : " + date);
+
+        let newsListRequestDto = new Object();
+        newsListRequestDto.searchdate = date;
+        newsListRequestDto.currentPage = 0;
 
         if (date !== "" && date.length>0) {
-            axios.get("http://ec2-54-180-180-198.ap-northeast-2.compute.amazonaws.com:8080/search/news/"+date)
+            axios.post("http://ec2-54-180-180-198.ap-northeast-2.compute.amazonaws.com:8080/search/news", newsListRequestDto)
+//            axios.post("http://127.0.0.1:8080/search/news/", newsListRequestDto)
                 .then( (res) => {
-                    this.setState({ newsList: res.data });
-                    console.log( res.data);
+                    console.log(res.data);
+                    this.setState({ newsList: res.data.content,
+                                    pageInfo : {currentPage : res.data.pageable.pageNumber,
+                                                totalElements : res.data.totalElements,
+                                                totalPages : res.data.totalPages
+                                            }
+                                    });
             });
         }
         else {
-            this.setState({ newsList: [] });
+            this.setState({ newsList: [],
+                            pageInfo : {currentPage : 0,
+                                        totalElements : -1,
+                                        totalPages : -1
+                                        }
+                            });
         }
-
     };
     // [J0005] 날짜 선택 End
 
-    onDataSave = () =>{
-        axios.get("http://ec2-54-180-180-198.ap-northeast-2.compute.amazonaws.com:8080/save/news/")
-            .then( (res) => {
-        });
+    updatePage = ( currentPage) =>{
+        this.setState({ pageInfo : {currentPage : currentPage}});
+
+        let newsListRequestDto = new Object();
+        newsListRequestDto.searchdate = this.state.date;
+        newsListRequestDto.currentPage = currentPage;
+
+        if( this.state.searchText === null || this.state.searchText.length<1){
+            axios.post("http://ec2-54-180-180-198.ap-northeast-2.compute.amazonaws.com:8080/search/news", newsListRequestDto)
+//            axios.post("http://127.0.0.1:8080/search/news/", newsListRequestDto)
+                .then( (res) => {
+                    this.setState({ newsList: res.data.content,
+                                    pageInfo : {currentPage : res.data.pageable.pageNumber,
+                                                totalElements : res.data.totalElements,
+                                                totalPages : res.data.totalPages
+                                            }
+                                    });
+            });
+        }
+        else{
+            newsListRequestDto.searchText = this.state.searchText;
+            axios.post("http://ec2-54-180-180-198.ap-northeast-2.compute.amazonaws.com:8080/search/newsdetail/", newsListRequestDto)
+//            axios.post("http://127.0.0.1:8080/search/newsdetail/", newsListRequestDto)
+                .then( (res) => {
+                    this.setState({ newsList: res.data.content,
+                                    pageInfo : {currentPage : res.data.pageable.pageNumber,
+                                                totalElements : res.data.totalElements,
+                                                totalPages : res.data.totalPages
+                                                }
+                                    });
+            });
+        }
+
+
+
     }
+
+    onSearchBtn = searchText => {
+        this.setState({
+            searchText : searchText
+        })
+
+        let newsListRequestDto = new Object();
+        newsListRequestDto.searchdate = this.state.date;
+        newsListRequestDto.searchText = searchText;
+        newsListRequestDto.currentPage = 0;
+
+        if (newsListRequestDto !== "" ) {
+            axios.get("http://ec2-54-180-180-198.ap-northeast-2.compute.amazonaws.com:8080/search/newsdetail/", newsListRequestDto)
+//            axios.post("http://127.0.0.1:8080/search/newsdetail/", newsListRequestDto)
+                .then( (res) => {
+                    console.log(res);
+                    this.setState({ newsList: res.data.content,
+                                    pageInfo : {currentPage : res.data.pageable.pageNumber,
+                                                totalElements : res.data.totalElements,
+                                                totalPages : res.data.totalPages
+                                                }
+                                    });
+            });
+        }
+        else {
+            this.setState({ newsList: [],
+                            pageInfo : {currentPage :0,
+                                        totalElements : -1,
+                                        totalPages : -1
+                                        }
+                            });
+        }
+    }
+
     render() {
         return (
             <div className="main-div">
                 <div className="kproject-head">
-                    <h1 class="kproject-title">KProejct</h1>
-                    <button className="cron-btn" onClick={(event) => {this.onDataSave()}} >뉴스 수집</button>
+                    <h1 className="kproject-title">KProejct</h1>
                 </div>
                 <div className="kproject-content">
                     <CalendarView onDatePChange={this.onDatePChange}/>
-                    <NewsList date={this.state.date} newsList={this.state.newsList}/>
+                    <NewsList date={this.state.date} onSearchBtn={this.onSearchBtn} newsList={this.state.newsList}
+                            pageInfo={this.state.pageInfo} updatePage={this.updatePage}/>
                 </div>
             </div>
         );

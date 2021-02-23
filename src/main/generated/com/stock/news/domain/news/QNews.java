@@ -19,20 +19,19 @@ public class QNews extends EntityPathBase<News> {
 
     public static final QNews news = new QNews("news");
 
-    public final com.stock.news.domain.QBaseTimeEntity _super = new com.stock.news.domain.QBaseTimeEntity(this);
-
     public final StringPath company = createString("company");
 
     public final StringPath content = createString("content");
 
-    //inherited
-    public final DateTimePath<java.time.LocalDateTime> createddate = _super.createddate;
+    public final DateTimePath<java.time.LocalDateTime> createdate = createDateTime("createdate", java.time.LocalDateTime.class);
 
     public final StringPath date = createString("date");
 
     public final NumberPath<Long> id = createNumber("id", Long.class);
 
     public final StringPath pictureurl = createString("pictureurl");
+
+    public final StringPath searchdate = createString("searchdate");
 
     public final StringPath title = createString("title");
 

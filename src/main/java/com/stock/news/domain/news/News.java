@@ -6,11 +6,12 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.time.LocalDateTime;
 
 @Getter
 @NoArgsConstructor
 @Entity                     // 생성일 정보는 상속
-public class News extends BaseTimeEntity {
+public class News {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id; // pk
@@ -22,11 +23,12 @@ public class News extends BaseTimeEntity {
     private String pictureurl; // 기사 작은 사진 url
     private Long view; // 사용자가 뉴스를 클릭한 횟수, 초기 값1
     private String date; // 날짜 검색용
-    //public date time형 날짜
-
+    private LocalDateTime createdate;
+    private String searchdate;
 
     @Builder
-    public News ( Long id, String title, String content, String company, String url, String pictureurl, Long view, String date){
+    public News ( Long id, String title, String content, String company, String url, String pictureurl, Long view,
+                  String date , LocalDateTime createdate, String searchdate){
         this.id = id;
         this.title = title;
         this.content = content;
@@ -35,5 +37,7 @@ public class News extends BaseTimeEntity {
         this.pictureurl = pictureurl;
         this.view = view;
         this.date = date;
+        this.createdate = createdate;
+        this.searchdate = searchdate;
     }
 }

@@ -17,7 +17,7 @@ public class NewsServiceTest {
     @Test
     public void 뉴스_크롤링_테스트() throws Exception{
 
-        String test = newsService.batchExecute();
+       // String test = newsService.batchExecute();
 
         assertThat( "test").isEqualTo( "test");
 
